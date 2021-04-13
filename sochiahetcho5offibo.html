@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let f1 = 1
+    let f2 = 1
+    let n = prompt("Nhập vào dãy fibonacci cần kiểm tra")
+    for (let i = 0; i < n ; i++) {
+        let v = f1 + f2
+        f1 = f2
+        f2 = v
+        if (v % 5 == 0) {
+            document.write("Số chia hết cho 5 là: "+v+"<br>")
+        }
+
+    }
+</script>
+</body>
+</html>
